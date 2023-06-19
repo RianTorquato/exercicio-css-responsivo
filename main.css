@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.resolution {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%S;
+}
+
+header>.container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+header li {
+  display: inline;
+  list-style: none;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sobre h2,
+.resolution h2 {
+  border-bottom: 2px solid blue;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.resolution,
+.sobre {
+  padding-top: 22px;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.sobre img {
+  max-width: 100%;
+}
+
+.sobre p {
+  padding-left: 10px;
+}
+
+.container img {
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.container-flex {
+  display: flex;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.tenis {
+  list-style: none;
+  padding: 10px;
+}
+
+.produtos h3 {
+  margin: 16px 0;
+}
+
+.produtos button {
+  margin-top: 15px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.list-prod {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+  .list-prod {
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width:640px) {
+
+  .sobre {
+      display: grid;
+      grid-template-columns: 100%;
+  }
+
+  .list-prod {
+      display: grid;
+      grid-template-columns: 90%;
+  }
+
+  .cabe {
+      display: grid;
+      grid-template-columns: 50% 50%S;
+  }
+}
